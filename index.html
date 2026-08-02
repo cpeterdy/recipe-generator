@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Recipe Generator</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter your ingredients"
@@ -30,7 +31,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">recipe will go here</div>
+        <div class="recipe" id="recipe"></div>
       </main>
 
       <footer>
