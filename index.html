@@ -4,39 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Recipe generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Recipe generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your ingredients"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>recipe will go here</div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your ingredients"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">recipe will go here</div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/cpeterdy" target="_blank">Chelsea Peterdy</a>,
-      is open-sourced on
-      <a href="https://github.com/cpeterdy/recipe-generator" target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://peterdy-recipe-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/cpeterdy" target="_blank">Chelsea Peterdy</a
+        >, is open-sourced on
+        <a href="https://github.com/cpeterdy/recipe-generator" target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://peterdy-recipe-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
