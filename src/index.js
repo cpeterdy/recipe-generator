@@ -16,6 +16,11 @@ function generateRecipe(event) {
   let context =
     "You are a food expert and chef. Your mission is to generate a delicious recipe for people cooking at home in basic HTML. The recipe should be easy to follow. Include the ingredients, steps to follow and cook time. Make sure to follow the user instructions submitted. Do not tell me that the recipe is in HTML. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="generating">⏳ Generating your recipe containining ${instructionsInput.value}</div>`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 

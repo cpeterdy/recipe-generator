@@ -17,23 +17,29 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI Recipe generator</h1>
+        <h1>AI Recipe Generator</h1>
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter your ingredients"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the ingredients you want to cook with"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e. chicken, tofu, carrots, etc. You can enter more than one
+            ingredient.
+          </div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
