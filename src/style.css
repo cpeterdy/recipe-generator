@@ -1,11 +1,17 @@
 body {
-  background-color: #f7f7e8;
   font-family: "Manrope", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/181/083/original/sergey-kotenev-l4U1u0bso6E-unsplash.jpg?1785717999");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
   margin: 120px auto;
   max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 header {
@@ -17,11 +23,18 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: #557174;
+  color: #1d1e1e;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #1d1e1e;
 }
 
 .form-container {
-  background-color: #c7cfb7;
+  background-color: #afac93;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
@@ -38,12 +51,12 @@ form {
   border-radius: 20px;
   width: 80%;
   font-size: 16px;
-  color: #557174;
+  color: #1d1e1e;
 }
 
 .submit-button {
   margin-left: 10px;
-  background-color: #557174;
+  background-color: #3c3d3c;
   border-radius: 20px;
   border: none;
   color: white;
@@ -56,12 +69,13 @@ form {
   font-size: 14px;
   line-height: 1.5;
   margin-top: 5px;
-  opacity: 0.6;
+  opacity: 0.8;
+  color: #1d1e1e;
 }
 
 .recipe {
   font-size: 16px;
-  background-color: #c7cfb7;
+  background-color: #afac93;
   padding: 20px;
   line-height: 2;
   border-radius: 10px;
@@ -76,6 +90,7 @@ footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  color: #1d1e1e;
 }
 
 a {
